@@ -1,0 +1,91 @@
+/*Selector{
+	Property
+}*/
+
+*{
+
+	text-align:center;
+	/*font-family: 'Fascinate', cursive;
+	font-family: 'RocknRoll One', sans-serif;*/
+	font-family: 'Libre Barcode 39 Text', cursive;
+}
+
+
+
+img{
+	float:right;
+}
+
+body
+{
+	background-image:url(https://pbs.twimg.com/media/DNNKb2cVAAAc9UX.jpg);
+		/*neko.jpeg);*/
+	background-color:white;
+	background-size:cover ;
+	background-repeat: no-repeat;
+}
+
+
+h1:hover{
+	font-family: 'Fascinate', cursive;
+	color:#8CA0E6;
+	background-color: #E6A3B5;
+	border:2.5px #8CA0E6 dashed;
+	text-align: center;
+}
+
+
+ul:hover{
+	color:  #E6A3B5;
+	background-color: #8CA0E6;
+	/*border: 3.6px inset pink;*/
+	font-size: 120%;
+
+}
+
+
+h2{
+	color: #859cE6;
+	text-align: center;
+	border: 3.6px inset pink;
+	background-color: lightcyan;
+	cursor:;
+}
+
+p{      
+	
+	color:#BB9DE3;
+	text-align: center;
+
+		/*background-color: blue;*/
+
+
+}
+li
+{
+	list-style: circle;
+	display:inline-block;
+}
+
+.webtext:first-child{
+
+	border:5px dashed #E68B75;
+
+}
+
+
+.active{
+
+	color:#E65D82;
+
+}
+
+
+#div1{
+	background: #BF6C20;
+}
+
+
+#div2{
+	background: #FDAED9;
+}

@@ -1,0 +1,69 @@
+body{
+
+	margin: 0px;
+
+}
+
+
+.container {
+  display: flex ;
+  flex-grow: 4;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+li
+{
+	list-style: none;
+	display:block; unicode-bidi: bidi-override;
+	text-align: center;
+
+}
+li {
+  margin:0 30px;
+  font-size:18px;
+  display:inline-block;
+}
+
+ul {
+  text-align: center;
+}
+
+
+
+h1{	
+	text-align: center;
+	font-family: 'Fascinate', cursive;
+	font-size: 5em;
+	background-color: pink;
+	border-top: 20px solid pink;
+	border-bottom: 20px solid pink;
+	box-shadow: 4px 4px 4px #888888;
+	margin:  10px
+	margin-top:  10px;
+
+}
+
+
+h2,h3,p{
+		margin-left: 10px;
+
+	font-family: 'Fascinate';
+	margin: 10px;
+
+	}
+
+
+img{
+	width:250px;
+	height:350px;
+	margin: 20px;
+	transition: all 2s;
+
+}
+
+img:hover{
+	transform: scale(1.4);
+	transform: rotate(720deg);
+}
