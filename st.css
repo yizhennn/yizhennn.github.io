@@ -1,39 +1,114 @@
 body{
 
-	margin: 0px;
+	margin:auto 0;
 
 }
 
 
-.container {
+/*.container {
   display: flex ;
   flex-grow: 4;
   flex-wrap: wrap;
   justify-content: center;
+}*/
+
+*{	text-decoration: none;}
+
+.container {
+	display:grid;
+	grid-gap:10px;
+	grid-template-columns:repeat(auto-fill,minmax(250px,1fr) );
+
+	grid-template-rows:1fr;
+	grid-column: 1/-1;
+	justify-items: end;
+	justify-content: start;
+
 }
+
+.container2 {
+	height: 70px;
+	display:grid;
+	grid-template-columns:1fr;
+	grid-column: 1/-1;
+	justify-items: center;
+	justify-content: center;
+	position: relative;
+	background-color:pink;
+	z-index: 2;
+
+
+}
+
+
+a{
+	border-radius: 6px;
+	background:none;
+	border: 2px solid #B3FFDC;
+	color:#B3FFDC;
+	padding: 10px 10px;
+	cursor: pointer;
+	transition: color 0.4s linear;
+	position: relative;
+
+}
+
+a:hover{
+	box-shadow: 5px 5px 5px gray;
+
+		color:#B6A8FF ;
+		border: 2px solid #B6A8FF;
+
+	}
+
+
+a::before{
+	background-color: #FFF7C2 ;
+
+	content: "";
+	position: absolute;
+	left:0;
+	top:0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	transition: transform 0.5s ;
+	transform-origin :0 0 ;
+	transition-timing-function: cubic-bezier(0.5, 1.6, 0.6, 0.4);
+
+}
+
+a::before{transform:scaleX(0);}
+a:hover:before{transform:scaleX(1);}
+
+
+@media only screen and (max-width:600px){
+	.container2 {
+	font-size:0.5em;
+}}
 
 li {
-  margin:0 30px;
-  font-size:18px;
-  display:inline-block;
+	font-size: 1.5em;
+	margin:0 15px;
+	display:inline-block;
 }
 
-ul {
-  text-align: center;
-}
 
 
 
 h1{	
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+	top:0px;
 	text-align: center;
 	font-family: 'Fascinate', cursive;
-	font-size: 5em;
+	font-size: 8em;
 	background-color: pink;
 	border-top: 15px solid black;
 	border-bottom: 20px solid pink;
 	box-shadow: 4px 4px 4px #888888;
-	margin:  1px
-	margin-top: 2px ;
+	margin-top : 50px ;
+	z-index: 5;
 
 
 }
@@ -49,14 +124,16 @@ h2,h3,p{
 
 
 img{
+
 	width:250px;
 	height:350px;
-	margin: 20px;
+	
 	transition: all 2s;
 
 }
 
 img:hover{
+	
 	transform: scale(1.4);
 	transform: rotate(720deg);
 }
