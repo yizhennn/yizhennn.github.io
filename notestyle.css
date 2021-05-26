@@ -1,5 +1,4 @@
 body{
-
 	margin:auto 0;
 
 }
@@ -36,12 +35,18 @@ body{
 	position: relative;
 	background-color:pink;
 	z-index: 2;
-
-
 }
 
+.ul1{
 
-a,b{
+    list-style-type:none;
+    display:inline-block;
+    font-size: 1.5em;
+	margin:0 15px;
+
+}
+.a1,b{
+
 	border-radius: 6px;
 	background:none;
 	border: 2px solid #B3FFDC;
@@ -52,7 +57,7 @@ a,b{
 
 }
 
-a:hover{
+.a1:hover{
 	box-shadow: 5px 5px 5px gray;
 
 		color:#B6A8FF ;
@@ -61,7 +66,7 @@ a:hover{
 	}
 
 
-a::before{
+.a1::before{
 	background-color: #FFF7C2 ;
 
 	content: "";
@@ -77,20 +82,14 @@ a::before{
 
 }
 
-a::before{transform:scaleY(0);}
-a:hover:before{transform:scaleY(1);}
+.a1::before{transform:scaleY(0);}
+.a1:hover:before{transform:scaleY(1);}
 
 
 @media only screen and (max-width:600px){
 	.container2 {
 	font-size:0.5em;
 }}
-
-li {
-	font-size: 1.5em;
-	margin:0 15px;
-	display:inline-block;
-}
 
 
 
@@ -100,8 +99,8 @@ h1{
     position: sticky;
 	top:0px;
 	text-align: center;
-	font-family: 'Fascinate', cursive;
-	font-size: 8em;
+    font-family: 'Permanent Marker', cursive;   
+     font-size: 8em;
 	background-color: pink;
 	border-top: 15px solid black;
 	border-bottom: 20px solid pink;
@@ -114,11 +113,8 @@ h1{
 
 
 h2,h3,p{
-		margin-left: 10px;
-
 	font-family: 'Fascinate';
 	margin: 10px;
-
 	}
 
 
@@ -136,3 +132,26 @@ img:hover{
 	transform: scale(1.4);
 	transform: rotate(720deg);
 }
+
+
+
+.sec1{
+    color:#B3FFDC;
+    margin-left: 20px;
+    font-family: 'Petrona', Black 900 italic;
+
+	margin: 10px;
+    font-size: 1.2rem;
+    background-color:plum ; 
+
+    border-radius: 6px;
+	padding: 10px 10px;
+	transition: color 0.4s linear;
+
+}
+
+.a2:link{color:#B3FFDC;}      /* 未存取連結*/
+.a2:visited {color:#B3FFDC;}  /* 已存取連結 */
+.a2:hover {color:bisque; text-decoration:underline;   
+}
+.a2:active {background-color:#B3FFDC;} 
